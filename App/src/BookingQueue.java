@@ -35,4 +35,9 @@ class BookingQueue {
             System.out.println(r.getGuestName() + " -> " + r.getRoomType());
         }
     }
+
+    // NEW METHOD (ADD THIS ONLY)
+    public Reservation getNextRequest() {
+        return queue.poll();
+    }
 }

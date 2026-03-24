@@ -12,9 +12,11 @@
  * @version 3.0
  */
 
+import java.io.Serializable;
 import java.util.HashMap;
+import java.util.Map;
 
-class RoomInventory {
+class RoomInventory implements Serializable {
 
     private HashMap<String, Integer> inventory;
 

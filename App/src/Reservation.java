@@ -9,7 +9,9 @@
  * @version 5.0
  */
 
-class Reservation {
+import java.io.Serializable;
+
+class Reservation implements Serializable {
 
     private String guestName;
     private String roomType;

@@ -37,7 +37,7 @@ class BookingQueue {
     }
 
     // NEW METHOD (ADD THIS ONLY)
-    public Reservation getNextRequest() {
+    public synchronized Reservation getNextRequest() {
         return queue.poll();
     }
 }
